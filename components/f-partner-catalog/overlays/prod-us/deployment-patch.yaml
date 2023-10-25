@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: f-partner-catalog
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/asaran-tenant/partner-catalog/f-partner-catalog@sha256:d3e5696c49c8bccbc3c996b858cb94d089b7461740acb9af11611a4c2ce136a0
+        name: my-java-springboot
+        resources: {}
+status: {}
